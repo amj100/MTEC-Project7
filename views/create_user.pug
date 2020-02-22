@@ -1,0 +1,18 @@
+include includes/mixins.pug
+
+doctype html
+html
+	head
+		title Create User
+		include includes/head.pug
+	body
+		main
+			include includes/header.pug
+			section
+				div(class="panel")
+					form(method="post", action="/create_user")
+						input(required type="text", id="id", name="id" placeholder="ID")
+						input(required type="text", id="name", name="name" placeholder="Name")
+						input(required type="email", id="email", name="email" placeholder="Email")
+						input(required type="number", id="age", name="age" placeholder="Age")
+						input(type="submit", value="Create User")

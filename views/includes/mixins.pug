@@ -1,0 +1,12 @@
+mixin users(list)
+	each user in list
+		div(class="user-box")
+			div(class="info")
+				p= "ID: " + user.id
+				p= "Name: " + user.name
+				p= "Email: " + user.email
+				p= "Age: " + user.age
+			div(class="buttons")
+				a(href=`/edit_user/${user._id}`) Edit
+				form(method="post", action=`/delete_user/${user._id}`)
+					button(type="submit") Delete

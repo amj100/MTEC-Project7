@@ -1,0 +1,18 @@
+include includes/mixins.pug
+
+doctype html
+html
+	head
+		title Edit User
+		include includes/head.pug
+	body
+		main
+			include includes/header.pug
+			section
+				div(class="panel")
+					form(method="post", action=`/edit_user/${_id}`)
+						input(required type="text", id="id", name="id" placeholder="ID" value=id)
+						input(required type="text", id="name", name="name" placeholder="Name" value=name)
+						input(required type="email", id="email", name="email" placeholder="Email" value=email)
+						input(required type="number", id="age", name="age" placeholder="Age" value=age)
+						input(type="submit", value="Update User")

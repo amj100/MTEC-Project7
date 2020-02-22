@@ -1,0 +1,233 @@
+html, body, main {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eee;
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	height: 32px;
+	background-color: #333;
+	box-shadow: 0 0 8px -6px #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header .left, header .middle, header .right {
+	width: 50%;
+}
+header .middle {
+	text-align: center;
+}
+header .right form {
+	justify-content: flex-end;
+	align-items: center;
+}
+header a {
+	padding: 0 8px;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.1s;
+}
+header a:hover {
+	color: #999;
+	transition: color 0.1s;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: calc(100% - 32px);
+	width: 100%;
+}
+
+div.panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0 6px 24px -18px #333;
+	width: 400px;
+	height: 500px;
+	max-width: calc(100% - 60px);
+	max-height: calc(100% - 60px);
+	padding: 20px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+a.box {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 50%;
+	padding: 18px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow: 0 6px 24px -18px #333;
+	transition: color 0.1s;
+}
+a.box:hover {
+	color: #999;
+	transition: color 0.1s;
+}
+
+
+.create_user {
+	display: flex;
+	width: 100%;
+	padding: 12px 0;
+	justify-content: center;
+	align-items: center;
+	background-color: #69bf69;
+	box-shadow: 0 2px 12px -8px #333;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	transition: background-color 0.1s;
+}
+.create_user:hover {
+	background-color: #509150;
+	transition: background-color 0.1s;
+}
+
+div.user-box {
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+}
+div.user-box .info {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	overflow: hidden;
+	background-color: transparent;
+	border: solid #333 1px;
+	border-radius: 3px;
+	padding: 6px;
+}
+div.user-box .info p {
+	display: flex;
+	color: #333;
+	justify-content: center;
+	align-items: center;
+	margin: 0 12px 0 0;
+	padding: 0;
+	font-size: 12px;
+}
+div.user-box .buttons {
+	display: flex;
+	width: 40%;
+}
+div.user-box .buttons a, div.user-box .buttons button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 100%;
+	background-color: #333;
+	border: none;
+	font-size: 14px;
+	color: #fff;
+	padding: 6px;
+	margin-left: 6px;
+	border-radius: 3px;
+	box-shadow: 0 6px 24px -18px #333;
+	transition: color 0.1s;
+}
+div.user-box .buttons button {
+	height: 100%;
+}
+div.user-box .buttons a:hover, div.user-box .buttons button:hover {
+	cursor: pointer;
+	color: #999;
+	transition: color 0.1s;
+}
+
+form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+form input {
+	width: calc(100% - 32px);
+	margin: 10px;
+	background-color: transparent;
+	border: solid #999 1px;
+	border-radius: 3px;
+	padding: 6px;
+	font-size: 14px;
+}
+form input:required:-moz-ui-invalid {
+	outline: none;
+	box-shadow: none;
+	background-color: #ffaaaa;
+}
+form input[type=submit] {
+	width: calc(100% - 20px);
+	background-color: #333;
+	box-shadow: 0 2px 12px -8px #333;
+	border: none;
+	color: #fff;
+	transition: color 0.1s;
+}
+form input[type=submit]:hover {
+	color: #999;
+	cursor: pointer;
+	transition: color 0.1s;
+}
+
+.topForm {
+	display: flex;
+	flex-direction: row;
+}
+.topForm input {
+	background-color: #fff;
+	width: 20%;
+	padding: 3px;
+	font-size: 12px;
+	border: none;
+}
+.topForm input[type=submit] {
+	background-color: #fff;
+	width: 20%;
+	padding: 3px;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #69bf69;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	transition: background-color 0.1s;
+}
+.topForm input[type=submit]:hover {
+	background-color: #509150;
+	color: #fff;
+	transition: background-color 0.1s;
+}
+
+select {
+	width: 20%;
+	background-color: #fff;
+	border: none;
+	padding: 2px;
+	font-size: 12px;
+	margin: 10px;
+	border-radius: 3px;
+}

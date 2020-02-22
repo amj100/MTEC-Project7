@@ -1,0 +1,13 @@
+header
+	div(class="left")
+		
+	div(class="middle")
+		a(href="/") Project 6
+	div(class="right")
+		form(class="topForm" method="post", action="/users")
+			input(type="text", id="search", name="search" placeholder="Search...")
+			select(id="sort", name="sort")
+				option(value="none") None
+				option(value="ascend") Ascending Alphabetical Order
+				option(value="descend") Descending Alphabetical Order
+			input(type="submit", value="Filter...")
